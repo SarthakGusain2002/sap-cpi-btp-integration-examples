@@ -49,8 +49,18 @@ Caused by: SocketTimeoutException: Connect timed out
 This isolates the issue specifically to the SFTP sender's outbound connection in the trial environment, and confirms the rest of the integration logic (message transformation + REST delivery) works as designed.
 
 ## Screenshots
-- `01-iflow-design.png` — Full iFlow canvas (Sender → Content Modifier → Receiver)
-- `02-security-material.png` — Security Material successfully created and deployed
-- `03-deployment-success.png` — Deployment status: Deployed
-- `04-runtime-error.png` — SFTP timeout error from Monitor
-- `05-postman-verification.png` — Postman test confirming receiver endpoint works correctly
+
+**iFlow Design**
+![iFlow Design](01-iflow-design.png)
+
+**Security Material Created**
+![Security Material](02-security-material.png)
+
+**Deployment Success**
+![Deployment Success](03-deployment-success.png)
+
+**Runtime Error (Troubleshooting)**
+![Runtime Error](04-runtime-error.png)
+
+**Postman Verification**
+![Postman Verification](05-postman-verification.png)
